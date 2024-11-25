@@ -34,13 +34,13 @@ export default function Home() {
               backgroundColor: "white",
             }}
           >
-            <div style={{ flex: 1 }}>
+            <a href="https://industry-4o9k.onrender.com/suppliers" target="_blank" rel="noopener noreferrer" style={{ flex: 1 }}>
               <img
                 src="/1.png"
-                alt="Card Image"
+                alt="Supplier"
                 style={{ width: 300, height: 250, objectFit: "cover" }}
               />
-            </div>
+            </a>
             <div style={{ flex: 2, padding: "16px" }}>
               <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
                 Supplier
@@ -65,19 +65,19 @@ export default function Home() {
               backgroundColor: "white",
             }}
           >
-            <div style={{ flex: 1 }}>
+            <a href="https://industry-4o9k.onrender.com/products" target="_blank" rel="noopener noreferrer" style={{ flex: 1 }}>
               <img
                 src="/2.png"
-                alt="Card Image"
+                alt="Product"
                 style={{ width: 300, height: 250, objectFit: "cover" }}
               />
-            </div>
+            </a>
             <div style={{ flex: 2, padding: "16px" }}>
               <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
                 Product
               </h2>
               <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
-              The Product is the finished item created by the OEM Manufacturer, incorporating Gorilla Glass into its design. It could range from a smartphone to a display device, where Gorilla Glass enhances the product’s functionality and aesthetics. The Product is assembled using high-quality components and is shipped to Retailers for customer distribution. Its attributes, such as durability and performance, are tracked through integrated data models, allowing for warranty support and usage insights.
+                The Product is the finished item created by the OEM Manufacturer, incorporating Gorilla Glass into its design. It could range from a smartphone to a display device, where Gorilla Glass enhances the product’s functionality and aesthetics. The Product is assembled using high-quality components and is shipped to Retailers for customer distribution. Its attributes, such as durability and performance, are tracked through integrated data models, allowing for warranty support and usage insights.
               </p>
             </div>
           </div>
@@ -96,19 +96,19 @@ export default function Home() {
               backgroundColor: "white",
             }}
           >
-            <div style={{ flex: 1 }}>
+            <a href="https://industry-4o9k.onrender.com/oem_manufacturers" target="_blank" rel="noopener noreferrer" style={{ flex: 1 }}>
               <img
                 src="/3.png"
-                alt="Card Image"
+                alt="OEM Manufacturer"
                 style={{ width: 300, height: 250, objectFit: "cover" }}
               />
-            </div>
+            </a>
             <div style={{ flex: 2, padding: "16px" }}>
               <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
-              OEM Manufacturer
+                OEM Manufacturer
               </h2>
               <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
-              The OEM Manufacturer assembles the finished product, integrating Gorilla Glass supplied by the Supplier into devices or components. They manage inventory, ensure smooth operations, and send feedback to the Supplier about the quality and compatibility of the received glass. The manufacturer also oversees the assembly process, ensuring adherence to design specifications, and forwards the finished product to retailers for distribution.
+                The OEM Manufacturer assembles the finished product, integrating Gorilla Glass supplied by the Supplier into devices or components. They manage inventory, ensure smooth operations, and send feedback to the Supplier about the quality and compatibility of the received glass. The manufacturer also oversees the assembly process, ensuring adherence to design specifications, and forwards the finished product to retailers for distribution.
               </p>
             </div>
           </div>
@@ -127,51 +127,53 @@ export default function Home() {
               backgroundColor: "white",
             }}
           >
-            <div style={{ flex: 1 }}>
+            <a href="https://industry-4o9k.onrender.com/retailers" target="_blank" rel="noopener noreferrer" style={{ flex: 1 }}>
               <img
                 src="/1.png"
-                alt="Card Image"
+                alt="Retailer"
                 style={{ width: 300, height: 250, objectFit: "cover" }}
               />
-            </div>
+            </a>
             <div style={{ flex: 2, padding: "16px" }}>
               <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
                 Retailer
               </h2>
               <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
-              The Retailer serves as the intermediary between the OEM Manufacturer and the Customer, distributing finished products and collecting customer feedback. They track product sales, manage customer interactions, and relay feedback regarding the performance of the finished product back to the OEM Manufacturer. This ensures that customer experiences and satisfaction are integrated into the supply chain for ongoing improvements.
+                The Retailer serves as the intermediary between the OEM Manufacturer and the Customer, distributing finished products and collecting customer feedback. They track product sales, manage customer interactions, and relay feedback regarding the performance of the finished product back to the OEM Manufacturer. This ensures that customer experiences and satisfaction are integrated into the supply chain for ongoing improvements.
               </p>
             </div>
           </div>
-          <div
-            style={{
-              display: "flex",
-              border: "1px solid #ddd",
-              borderRadius: "8px",
-              overflow: "hidden",
-              margin: "16px",
-              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-              maxWidth: "800px",
-              width: "100%",
-              backgroundColor: "white",
-            }}
-          >
-            <div style={{ flex: 1 }}>
-              <img
-                src="/4.png"
-                alt="Card Image"
-                style={{ width: 300, height: 250, objectFit: "cover" }}
-              />
-            </div>
-            <div style={{ flex: 2, padding: "16px" }}>
-              <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
-                Gorilla Glass
-              </h2>
-              <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
-              Gorilla Glass is the key machine part at the center of the supply chain. As a durable and scratch-resistant material, it is manufactured or sourced by the Supplier and integrated into the final product by the OEM Manufacturer. Gorilla Glass undergoes quality assurance checks to ensure it meets performance standards such as clarity, durability, and size specifications. Any feedback regarding defects or issues with the glass is transmitted through the chain, allowing the Supplier to make necessary repairs or replacements.
-              </p>
-            </div>
-          </div>
+{/* Fourth Card for Gorilla Glass */}
+<div
+  style={{
+    display: "flex",
+    border: "1px solid #ddd",
+    borderRadius: "8px",
+    overflow: "hidden",
+    margin: "16px",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    maxWidth: "800px",
+    width: "100%",
+    backgroundColor: "white",
+  }}
+>
+  <a href="https://industry-4o9k.onrender.com/gorilla_glasses" target="_blank" rel="noopener noreferrer" style={{ flex: 1 }}>
+    <img
+      src="/4.png"
+      alt="Gorilla Glass"
+      style={{ width: 300, height: 250, objectFit: "cover" }}
+    />
+  </a>
+  <div style={{ flex: 2, padding: "16px" }}>
+    <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
+      Gorilla Glass
+    </h2>
+    <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
+      Gorilla Glass is the key machine part at the center of the supply chain. As a durable and scratch-resistant material, it is manufactured or sourced by the Supplier and integrated into the final product by the OEM Manufacturer. Gorilla Glass undergoes quality assurance checks to ensure it meets performance standards such as clarity, durability, and size specifications. Any feedback regarding defects or issues with the glass is transmitted through the chain, allowing the Supplier to make necessary repairs or replacements.
+    </p>
+  </div>
+</div>
+
           {/* Fifth Card */}
           <div
             style={{
@@ -186,19 +188,19 @@ export default function Home() {
               backgroundColor: "white",
             }}
           >
-            <div style={{ flex: 1 }}>
+            <a href="https://industry-4o9k.onrender.com/customers" target="_blank" rel="noopener noreferrer" style={{ flex: 1 }}>
               <img
                 src="/5.png"
-                alt="Card Image"
+                alt="Customer"
                 style={{ width: 300, height: 250, objectFit: "cover" }}
               />
-            </div>
+            </a>
             <div style={{ flex: 2, padding: "16px" }}>
               <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
-              Customer
+                Customer
               </h2>
               <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
-              The Customer is the end-user of the finished product containing Gorilla Glass. Their role involves using the product and providing valuable feedback about its quality, durability, and performance. This feedback is collected by the Retailer and passed up the chain to the OEM Manufacturer and ultimately to the Supplier, ensuring the continuous refinement of the product and addressing any issues for future iterations.
+                The Customer is the end-user of the finished product containing Gorilla Glass. Their role involves using the product and providing valuable feedback about its quality, durability, and performance. This feedback is collected by the Retailer and passed up the chain to the OEM Manufacturer and ultimately to the Supplier, ensuring the continuous refinement of the product and addressing any issues for future iterations.
               </p>
             </div>
           </div>
