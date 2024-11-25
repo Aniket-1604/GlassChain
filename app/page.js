@@ -2,100 +2,208 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <section className="z-50">
+        <div className="flex justify-center items-center mt-20">
+          <Image src={"/industry.png"} width={350} height={250} alt="" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="py-5 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
+            Introducing GlassChain
+          </h1>
+          <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-black">
+            Connecting Transparency with Durability
+          </h2>
+          <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+            A revolutionary platform that bridges the gap between suppliers, manufacturers, retailers, and customers, ensuring seamless integration, transparency, and innovation throughout the entire Gorilla Glass supply chain.
+          </p>
+        </div>
+
+        <div className="flex justify-center items-center flex-wrap">
+          {/* First Card */}
+          <div
+            style={{
+              display: "flex",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              overflow: "hidden",
+              margin: "16px",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              maxWidth: "800px",
+              width: "100%",
+              backgroundColor: "white",
+            }}
+          >
+            <div style={{ flex: 1 }}>
+              <img
+                src="/1.png"
+                alt="Card Image"
+                style={{ width: 300, height: 250, objectFit: "cover" }}
+              />
+            </div>
+            <div style={{ flex: 2, padding: "16px" }}>
+              <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
+                Supplier
+              </h2>
+              <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
+                The Supplier in the Glass Chain system is responsible for manufacturing or sourcing high-quality Gorilla Glass and ensuring its seamless delivery to OEM Manufacturers. They process incoming orders by verifying details such as quantity, specifications, and delivery requirements, and prepare the Gorilla Glass for secure shipping. The supplier plays a crucial role in maintaining the efficiency and quality of the overall supply chain.
+              </p>
+            </div>
+          </div>
+
+          {/* Second Card */}
+          <div
+            style={{
+              display: "flex",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              overflow: "hidden",
+              margin: "16px",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              maxWidth: "800px",
+              width: "100%",
+              backgroundColor: "white",
+            }}
+          >
+            <div style={{ flex: 1 }}>
+              <img
+                src="/2.png"
+                alt="Card Image"
+                style={{ width: 300, height: 250, objectFit: "cover" }}
+              />
+            </div>
+            <div style={{ flex: 2, padding: "16px" }}>
+              <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
+                Product
+              </h2>
+              <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
+              The Product is the finished item created by the OEM Manufacturer, incorporating Gorilla Glass into its design. It could range from a smartphone to a display device, where Gorilla Glass enhances the product’s functionality and aesthetics. The Product is assembled using high-quality components and is shipped to Retailers for customer distribution. Its attributes, such as durability and performance, are tracked through integrated data models, allowing for warranty support and usage insights.
+              </p>
+            </div>
+          </div>
+
+          {/* Third Card */}
+          <div
+            style={{
+              display: "flex",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              overflow: "hidden",
+              margin: "16px",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              maxWidth: "800px",
+              width: "100%",
+              backgroundColor: "white",
+            }}
+          >
+            <div style={{ flex: 1 }}>
+              <img
+                src="/3.png"
+                alt="Card Image"
+                style={{ width: 300, height: 250, objectFit: "cover" }}
+              />
+            </div>
+            <div style={{ flex: 2, padding: "16px" }}>
+              <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
+              OEM Manufacturer
+              </h2>
+              <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
+              The OEM Manufacturer assembles the finished product, integrating Gorilla Glass supplied by the Supplier into devices or components. They manage inventory, ensure smooth operations, and send feedback to the Supplier about the quality and compatibility of the received glass. The manufacturer also oversees the assembly process, ensuring adherence to design specifications, and forwards the finished product to retailers for distribution.
+              </p>
+            </div>
+          </div>
+
+          {/* Fourth Card */}
+          <div
+            style={{
+              display: "flex",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              overflow: "hidden",
+              margin: "16px",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              maxWidth: "800px",
+              width: "100%",
+              backgroundColor: "white",
+            }}
+          >
+            <div style={{ flex: 1 }}>
+              <img
+                src="/1.png"
+                alt="Card Image"
+                style={{ width: 300, height: 250, objectFit: "cover" }}
+              />
+            </div>
+            <div style={{ flex: 2, padding: "16px" }}>
+              <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
+                Retailer
+              </h2>
+              <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
+              The Retailer serves as the intermediary between the OEM Manufacturer and the Customer, distributing finished products and collecting customer feedback. They track product sales, manage customer interactions, and relay feedback regarding the performance of the finished product back to the OEM Manufacturer. This ensures that customer experiences and satisfaction are integrated into the supply chain for ongoing improvements.
+              </p>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              overflow: "hidden",
+              margin: "16px",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              maxWidth: "800px",
+              width: "100%",
+              backgroundColor: "white",
+            }}
+          >
+            <div style={{ flex: 1 }}>
+              <img
+                src="/4.png"
+                alt="Card Image"
+                style={{ width: 300, height: 250, objectFit: "cover" }}
+              />
+            </div>
+            <div style={{ flex: 2, padding: "16px" }}>
+              <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
+                Gorilla Glass
+              </h2>
+              <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
+              Gorilla Glass is the key machine part at the center of the supply chain. As a durable and scratch-resistant material, it is manufactured or sourced by the Supplier and integrated into the final product by the OEM Manufacturer. Gorilla Glass undergoes quality assurance checks to ensure it meets performance standards such as clarity, durability, and size specifications. Any feedback regarding defects or issues with the glass is transmitted through the chain, allowing the Supplier to make necessary repairs or replacements.
+              </p>
+            </div>
+          </div>
+          {/* Fifth Card */}
+          <div
+            style={{
+              display: "flex",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              overflow: "hidden",
+              margin: "16px",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              maxWidth: "800px",
+              width: "100%",
+              backgroundColor: "white",
+            }}
+          >
+            <div style={{ flex: 1 }}>
+              <img
+                src="/5.png"
+                alt="Card Image"
+                style={{ width: 300, height: 250, objectFit: "cover" }}
+              />
+            </div>
+            <div style={{ flex: 2, padding: "16px" }}>
+              <h2 className="font-bold text-black" style={{ marginBottom: "8px", fontSize: "1.5rem" }}>
+              Customer
+              </h2>
+              <p className="font-semibold text-black" style={{ marginBottom: "16px", fontSize: "1rem" }}>
+              The Customer is the end-user of the finished product containing Gorilla Glass. Their role involves using the product and providing valuable feedback about its quality, durability, and performance. This feedback is collected by the Retailer and passed up the chain to the OEM Manufacturer and ultimately to the Supplier, ensuring the continuous refinement of the product and addressing any issues for future iterations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
